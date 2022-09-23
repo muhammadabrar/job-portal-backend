@@ -75,7 +75,7 @@ router.route("/type/:userId").put(async (req, res) => {
     const update = await Users.updateOne(
       { _id: id },
       {
-        $set: {
+        $set: {  
           user_type: data,
           status: "profile",
         },
