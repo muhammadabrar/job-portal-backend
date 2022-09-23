@@ -76,6 +76,7 @@ router.route("/type/:userId").put(async (req, res) => {
       { _id: id },
       {
         $set: {
+          user_type: data,
           status: "profile",
         },
       }
