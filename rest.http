@@ -1,0 +1,64 @@
+
+GET http://localhost:5000/api/user HTTP/1.1
+
+
+###
+
+
+POST http://localhost:5000/api/user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Muhammad",
+    "lastName": "Abrar",
+    "email": "a@a.com",
+    "password": "a@a.com"
+}
+
+###
+
+
+post http://localhost:5000/api/user/recruiter
+content-type: application/json
+
+{
+    "userId": "632dc85905d726428f05f829",
+    "company": "Omni Softex",
+    "about": "IT Company",
+    "email": "OmniSoftex@mail.com",
+    "CurrentAddress": "I-8, Islamabad",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "website": "OmniSoftex.com",
+    "logo": "",
+    "employees": 5
+}
+
+###
+
+
+put http://localhost:5000/api/recruiter
+content-type: application/json
+
+{
+     "userId": "632dc85905d726428f05f829",
+     "company": "Omni Softex",
+    "about": "IT Company",
+    "email": "OmniSoftex@mail.com",
+    "CurrentAddress": "I-8, Islamabad",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "website": "OmniSoftex.com",
+    "logo": "",
+    "employees": 5
+    
+}
+
+###
+#######################################################################################
+
+GET http://localhost:5000/api/customer/ HTTP/1.1
+
+
+###
+
