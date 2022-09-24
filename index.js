@@ -30,6 +30,14 @@ let userRoutes = require("./routes/users")
 
 app.use('/api/user', userRoutes)
 
+let ApplicationsRoutes = require("./routes/Applications")
+
+app.use('/api/applications', ApplicationsRoutes)
+
+let jobsRoutes = require("./routes/jobs")
+
+app.use('/api/jobs', jobsRoutes)
+
 app.listen(process.env.port || 5000);
 
 console.log('Web Server is listening at port http://localhost:' + (process.env.port || 5000));

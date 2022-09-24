@@ -6,14 +6,6 @@ let Recruiter = require("../models/Recruiter");
 
 
 //////////////////////////////////////
-///////////Get All Users////////////////
-router.route("/").get((req, res) => {
-  Users.find()
-    .then((Users) => res.json(Users))
-    .catch((err) => res.status(400).json("Error: " + err));
-});
-
-//////////////////////////////////////
 ///////////post Users////////////////
 router.route("/").post(async (req, res) => {
   const data = req.body;
